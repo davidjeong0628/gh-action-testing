@@ -1,0 +1,14 @@
+name: Hello World!
+
+# Run this workflow every time a new commit pushed to your repository
+on: push
+
+jobs:
+  say:
+    name: Say Hello World!
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make file
+        run: touch test.txt
+      - name: Write to file
+        run: echo "Hello World" >> test.txt
